@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro:wght@300&display=swap");
+
+/* color palette and font */
+:root {
+  --blue: rgba(81, 189, 194, 1);
+  --black: rgba(64, 62, 54, 1);
+  --orange: rgba(192, 88, 76, 1);
+  --red: rgba(148, 21, 48, 1);
+  --grey: rgba(181, 173, 140, 1);
+
+  --font-size: 1.3rem;
+  --sans: "Source Sans Pro", monospace;
+  --nunito: "Nunito", sans-serif;
+}
+
+/* ------------------------------------------------------- */
+/* border-box */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* ------------------------------------------------------- */
+/* default set up */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--nunito);
+  background-color: var(--grey);
+  color: var(--black);
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* ------------------------------------------------------- */
+/* introduction styles */
+
+.introduction {
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.introduction p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.introduction p:first-child {
+  font-family: var(--sans);
+  font-size: 1.3rem;
+}
+
+.introduction span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--red);
+  display: block;
+}
+
+.introduction h2 {
+  font-size: 3rem;
+}
+
+/* ------------------------------------------------------- */
+/* navigation bar */
+
+nav {
+  font-family: var(--nunito);
+  font-size: 80%;
+  padding: 1rem;
+}
+
+nav h1 a {
+  font-family: var(--sans);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+nav [class*="fa-"] {
+  font-size: 150%;
+  color: var(--orange);
+}
+nav h1 [class*="fa-"] {
+  font-size: 100%;
+  color: var(--orange);
+}
+
+nav a {
+  color: var(--orange);
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover,
+nav [class*="fa-"]:hover {
+  color: var(--blue);
+}
+
+/* ------------------------------------------------------- */
+/* div classes */
+
+.linear-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(192, 88, 76, 1) 0%,
+    rgba(64, 62, 54, 1) 100%
+  );
+  height: 5px;
+}
+
+.email-button {
+  background-color: var(--orange);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.email-button:hover {
+  background-color: var(--black);
+}
+
+.orange-background {
+  background-color: var(--orange);
+}
+
+/* ------------------------------------------------------- */
+/* project-detail */
+
+.projects-detail {
+  padding: 4rem 1rem;
+}
+.projects-detail h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3.75rem;
+}
+.projects-detail h3 {
+  color: var(--red);
+}
+
+.projects-detail h4 {
+  font-size: 1rem;
+  font-family: var(--nunito);
+  margin: 0;
+}
+.p-box {
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  background-color: var(--black);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: var(--sans);
+}
+
+.p-box span {
+  font-style: italic;
+  color: var(--blue);
+  font-size: 1.4rem;
+}
+
+.projects-detail ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+}
+.projects-detail img {
+  margin: 3rem 0 4rem 0;
+  padding: 1rem;
+  border-right: 1px solid var(--red);
+  border-bottom: 1px solid var(--red);
+  border-radius: 25px;
+}
+
+.middle img {
+  margin: 3rem 0 4rem 0;
+  padding: 1rem;
+  border-left: 1px solid var(--red);
+  border-bottom: 1px solid var(--red);
+  border-radius: 25px;
+  border-right: none;
+}
+
+/* ------------------------------------------------------- */
+/* contact-detail */
+
+.contact-detail {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+.section-background {
+  background-color: var(--blue);
+}
+.contact-detail p:last-child {
+  margin-top: 3rem;
+}
+
+/* ------------------------------------------------------- */
+/* footer */
+
+footer {
+  text-align: center;
+  font-family: var(--nunito);
+  padding: 4rem 0;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
+}
+
+footer a {
+  color: var(--orange);
+}
+footer a:hover {
+  color: var(--blue);
+}
+
+/* ------------------------------------------------------- */
+/* media queries */
+
+@media (min-width: 550px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .middle .projects-detail-text {
+    order: 2;
+    text-align: right;
+  }
+
+  .middle .projects-detail-text ul {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 800px) {
+  nav,
+  .projects-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
